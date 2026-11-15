@@ -3,5 +3,5 @@
 ## Install Beacon
 
 ```bash
-brew install --cask --no-quarantine nannndev/tap/beacon
+brew install --cask nannndev/tap/beacon
 ```
