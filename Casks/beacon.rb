@@ -12,11 +12,11 @@ cask "beacon" do
   app "Beacon.app"
   binary "#{appdir}/Beacon.app/Contents/MacOS/beacon_cli", target: "beacon"
 
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Beacon.app"],
-                   sudo: false
-  end
+  caveats <<~EOS
+    Beacon is currently unsigned on macOS.
+    If Gatekeeper blocks first launch, install with --no-quarantine or run:
+      xattr -dr com.apple.quarantine #{appdir}/Beacon.app
+  EOS
 
   zap trash: [
     "~/Library/Application Support/com.beacon.app",
