@@ -1,26 +1,26 @@
 # Template rendered by .github/workflows/release.yml into nannndev/homebrew-tap/Formula/eay-gateway.rb.
-# 0.9.0 and @SHA_*@ are filled in from the release's SHA256SUMS.txt.
+# 0.10.0 and @SHA_*@ are filled in from the release's SHA256SUMS.txt.
 class EayGateway < Formula
   desc "Local OpenAI/Anthropic-compatible AI gateway for your subscriptions and API keys"
   homepage "https://github.com/nannndev/eay-gateway"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/nannndev/eay-gateway/releases/download/v#{version}/eay-gateway-aarch64-apple-darwin"
-      sha256 "2fba02bed9a78a4fac1efe8ade74c8d9afc97a97f17eccfd69e94a0c83d2faae"
+      sha256 "c1cf7cc0993a5354438e7afacb4add9588f5fb5a76cd011c9e2ab5983d2cae8a"
     end
     on_intel do
       url "https://github.com/nannndev/eay-gateway/releases/download/v#{version}/eay-gateway-x86_64-apple-darwin"
-      sha256 "65160b3ccdc109921cee1b78bb4dff23ef9721044d9f60c5c811095e9d9a3d53"
+      sha256 "a792de71fea9ece732e0d73f26144a57ef4f41ddcb5df557f089389d8bd16767"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/nannndev/eay-gateway/releases/download/v#{version}/eay-gateway-x86_64-unknown-linux-gnu"
-      sha256 "8ff11f28710c3152ece77da059f432af7f871f4a2d5b8a69969779b73c14f1cc"
+      sha256 "fcfeb4c5ea1b900d13b0667ab2caa6f61ce47a6dbc15595f9c3c48db763651b8"
     end
   end
 
