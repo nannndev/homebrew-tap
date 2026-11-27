@@ -6,8 +6,8 @@ require "language/node"
 class Sevenserver < Formula
   desc "Self-hosted dashboard for your servers: monitoring, terminal, Docker, Nginx, and AI gateway"
   homepage "https://github.com/nannndev/7server"
-  url "https://github.com/nannndev/7server/releases/download/v0.4.0/sevenserver-0.4.0.tgz"
-  sha256 "2d23e9fa947299d7f7c2290e8678788788c4816678fd2f5ea69d125dd418d10c"
+  url "https://github.com/nannndev/7server/releases/download/v0.5.0/nannndev-7server-0.5.0.tgz"
+  sha256 "ef26399566b51877065d5bb750474d059894491327aa995de382017f9ada030e"
   license "MIT"
 
   depends_on "node"
